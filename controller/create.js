@@ -53,27 +53,27 @@ exports.add = async (req, res) => {
 // const Content = require('./models/Content'); // Import the Mongoose model
 
 exports.get = async (req, res) => {
-  // try {
-  //   // Fetch all documents with all fields
-  //   const contents = await model.find({});
+  try {
+    // Fetch all documents with all fields
+    const contents = await model.find({});
 
-  //   // Send success response with all fields
-  //   res.status(200).json({
-  //     success: true,
-  //     message: 'Contents fetched successfully!',
-  //     data: contents,
-  //   });
-  // } catch (e) {
-  //   // Handle errors
-  //   console.error('Error fetching contents:', e);
-  //   res.status(500).json({
-  //     success: false,
-  //     message: 'Internal server error',
-  //     error: e.message,
-  //   });
-  // }
+    // Send success response with all fields
+    res.status(200).json({
+      success: true,
+      message: 'Contents fetched successfully!',
+      data: contents,
+    });
+  } catch (e) {
+    // Handle errors
+    console.error('Error fetching contents:', e);
+    res.status(500).json({
+      success: false,
+      message: 'Internal server error',
+      error: e.message,
+    });
+  }
 
-  res.send('<>hyyy</>')
+  // res.send('<>hyyy</>')
 };
 
 

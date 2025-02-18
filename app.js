@@ -24,7 +24,7 @@ app.listen(port,()=>{
 
 
 app.get("/" ,(req,res) =>{
-    res.send(`<h1> This is HOMEPAGE byby</h1>`);
+    res.send(`<h1> This is HOMEPAGe byby</h1>`);
 })
 //jLPF9mGZD6yoCQnK
 //miaphone40
